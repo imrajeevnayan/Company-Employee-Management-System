@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="60" viewBox="10 0 580 240" role="img" aria-label="Kanha Amanta.in logo">
+  <title>Pravanjan Amanta.in logo</title>
+  <desc>Stacked logo: Kanha (top), AMANTA (large), and a blue italic .in on the right.</desc>
+
+  <defs>
+    <style type="text/css">
+    <![CDATA[
+      /* Top small word style */
+      .top {
+      font-family: "Segoe UI", "Arial", "Helvetica", sans-serif;
+        font-family: "BBH Sans Bartle", sans-serif;
+        font-weight: 900;
+        font-size: 52px;
+        letter-spacing: 2px;
+        fill: #FFFFFF;
+      }
+      /* Main big word style (blocky uppercase) */
+      .main {
+      font-family: "BBH Sans Bartle", sans-serif;
+        font-weight: 900;
+        font-size: 75px;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+        fill: #FFFFFF;
+      }
+      /* .in style: script/italic blue */
+      .dotin {
+        font-family: "Segoe Script", "Comic Sans MS", "Brush Script MT", cursive;
+        font-size: 46px;
+        font-style: italic;
+        fill: #0a52ff;
+      }
+
+      /* optional subtle shadow effect */
+      .shadow { filter: url(#ds); }
+    ]]>
+    </style>
+
+    <!-- small drop shadow filter -->
+    <filter id="ds" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" result="blur"/>
+      <feOffset in="blur" dx="2" dy="2" result="off"/>
+      <feMerge>
+        <feMergeNode in="off"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- white background -->
+  <!-- <rect x="0" y="0" width="100%" height="100%" fill="#ffffff"/> -->
+
+  <!-- Top word: "Kanha" -->
+  <!-- Positioned with a small left margin -->
+  <g transform="translate(60,36)" class="shadow">
+    <text class="top" x="0" y="65">SHIWANSH</text>
+  </g>
+ 
+  <!-- Main large word: "AMANTA" (stacked under "Kanha") -->
+  <g transform="translate(60,100)" class="shadow">
+    <!-- y set to align baseline visually; adjust if you change fonts -->
+    <text class="main" x="0" y="75">SOLUTIONS</text>
+  </g>
+
+  <!-- Blue italic ".in" positioned to the right of AMANTA -->
+  <g transform="translate(60,100)">
+    <!-- the x value positions .in to the right edge of AMANTA; adjust as desired -->
+    <text class="dotin" x="550" y="79">.com</text>
+  </g>
+
+  <!-- Optional: simple bounding guide (comment out or remove if not needed) -->
+  <!-- <rect x="0" y="0" width="980" height="240" fill="none" stroke="#eee"/> -->
+</svg>

@@ -1,0 +1,191 @@
+.landing-page {
+    position: absolute;
+    /* background-color: aqua; */
+    background-color: #040016;
+    /* background-color: #04001693; */
+    top: 0;
+    left: 0;
+    height: 100vh;
+    /* height: 150%; */
+    width: 101%;
+}
+
+/* Video container */
+.back-video {
+    position: absolute;
+    /* changed from relative to absolute for proper layering */
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    /* z-index: -1; */
+    /* behind header */
+    margin-top: -360px;
+}
+
+.back-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-body {
+    /* background-color: blueviolet; */
+    height: 80%;
+    width: 100%;
+    z-index: 9;
+    position: relative;
+}
+
+.sub-main {
+    height: 90vh;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    gap: 10px;
+}
+
+.sub1 {
+    height: 100%;
+    width: 50%;
+    /* background-color: azure; */
+}
+
+.sub2 {
+    height: 100%;
+    width: 50%;
+    /* background-color: rgb(59, 82, 82); */
+}
+
+.sub2 img {
+    margin-top: 100px;
+    margin-left: 50px;
+    height: 550px;
+    width: 550px;
+}
+
+
+/* For sub1 */
+.home-sub-div {
+    height: 80vh;
+    width: 70vw;
+    /* background-color: aqua; */
+    z-index: 1;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.home-sub-div p {
+    width: 45%;
+    color: rgb(107, 114, 128);
+    font-size: 14px;
+}
+
+.home-sub-div h2 {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.home-sub-div h1 {
+    font-size: 86px;
+    font-weight: 700;
+    background: #1b74fa;
+    background: linear-gradient(to right, #1b74fa 0%, #03e5d7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* margin-left: -16px; */
+}
+
+
+.name-head span {
+    margin-left: 8px;
+}
+
+
+.home-sub-div h3 {
+    font-size: 20px;
+    color: rgb(156, 163, 175);
+    font-weight: 400;
+}
+
+.unbox {
+    display: flex;
+    align-items: center;
+    gap: 52px;
+}
+
+.unbox img {
+    width: 30px;
+    /* Set image size */
+    height: 30px;
+    transition: stroke 0.3s ease, filter 0.3s ease;
+    /* Smooth transition for hover */
+    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg);
+    /* Default color */
+}
+
+.unbox img:hover {
+    cursor: pointer;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(0deg) brightness(100%);
+}
+
+
+
+
+/* Media Query */
+@media (max-width: 767px) {
+    .back-video {
+        margin-top: -460px;
+    }
+
+    .home-sub-div {
+        height: 80vh;
+        width: 90vw;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        margin-top: 260px;
+        gap: 5px;
+        justify-content: flex-start;
+    }
+
+
+    .home-sub-div h3 {
+        font-size: 14px;
+    }
+
+    .home-sub-div h1 {
+        font-size: 30px;
+        /* sets the height of text glyphs */
+        display: flex;
+        /* allows flex layout for child elements if any */
+        align-items: center;
+        /* optional: vertically centers text if needed */
+        justify-content: center;
+        /* optional: horizontally centers text if needed */
+        margin-left: -110px;
+    }
+
+    .home-sub-div p {
+        width: 78%;
+        color: rgb(107, 114, 128);
+        font-size: 9px;
+    }
+
+    .unbox img {
+        width: 25px;
+        /* Set image size */
+        height: 25px;
+    }
+
+    .home-sub-div h2 {
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {}
